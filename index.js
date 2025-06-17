@@ -1,6 +1,6 @@
 let flavorList = 'vanilla,vanilla,vanilla,strawberry,coffee,coffee';
 const flavorCounter = (flavors) => {
-  
+  console.log(flavorList)
   let result = {};
   for (let i = 0; i < flavorList.length; i++) {
     let flavor = flavorList[i];
