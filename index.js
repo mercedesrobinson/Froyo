@@ -1,9 +1,9 @@
-let flavorList = 'vanilla,vanilla,vanilla,strawberry,coffee,coffee';
+let flavorList = "vanilla,vanilla,vanilla,strawberry,coffee,coffee";
 const flavorCounter = (flavors) => {
-  console.log(flavorList)
+  console.log(flavors);
   let result = {};
-  for (let i = 0; i < flavorList.length; i++) {
-    let flavor = flavorList[i];
+  for (let i = 0; i < flavors.length; i++) {
+    let flavor = flavors[i];
     if (result[flavor]) {
       result[flavor] += 1;
     } else {
@@ -12,4 +12,5 @@ const flavorCounter = (flavors) => {
   }
   return result;
 };
-console.log(flavorCounter(flavorList));
+let flavorUsed = prompt("Please enter your flavor", flavorList);
+console.log(flavorCounter(flavorUsed.split(",")));
